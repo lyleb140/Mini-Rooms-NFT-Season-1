@@ -1,0 +1,47 @@
+TraitCategory,Option,RarityLabel,MintChancePercent,BuffDescription
+Hoodie Fabric,Cotton Classic,Common,32.0,+1% defense
+Hoodie Fabric,Urban Camo,Common,24.0,+2% defense
+Hoodie Fabric,Graffiti Print,Uncommon,18.0,+3% defense
+Hoodie Fabric,LeatherFlex,Uncommon,14.0,+4% defense
+Hoodie Fabric,Reflective Vinyl,Rare,8.0,+5% defense
+Hoodie Fabric,HoloChrome,Epic,3.0,+7% defense
+Hoodie Fabric,Platinum Weave,Legendary,1.0,+10% defense
+Hood Type,Standard Hood,Common,35.0,Neutral
+Hood Type,Tilted Hood,Common,25.0,-2% visibility detection
+Hood Type,LED-Lined Hood,Uncommon,18.0,-3% visibility detection
+Hood Type,Bandana Hood,Uncommon,12.0,-4% visibility detection
+Hood Type,Masked Hood,Rare,7.0,-6% visibility detection
+Hood Type,Chrome Hood,Epic,3.0,-8% visibility detection
+Face Accessory,None,Common,40.0,Neutral
+Face Accessory,Sunglasses,Common,22.0,+2% crit
+Face Accessory,Bandana Mask,Uncommon,15.0,+3% crit
+Face Accessory,LED Visor,Uncommon,12.0,+4% crit
+Face Accessory,Gas Mask,Rare,8.0,+6% crit
+Face Accessory,Skull Mask,Epic,2.5,+8% crit
+Face Accessory,Crown Mask,Legendary,0.5,+10% crit
+Back Gear,None,Common,38.0,Neutral
+Back Gear,Backpack,Common,25.0,+1 inventory slot
+Back Gear,Sling Bag,Uncommon,18.0,+1 slot & +1% speed
+Back Gear,Boombox,Uncommon,12.0,+3% knockback aura
+Back Gear,Spray Jetpack,Rare,6.0,+5% evasion
+Back Gear,Street Tech Drone,Epic,1.0,+8% evasion & auto-ping enemies
+Back Gear,Graffiti Wing Set,Legendary,0.5,+10% evasion & +5% movement
+Footwear,Standard Sneakers,Common,40.0,+1% speed
+Footwear,High-Tops,Common,24.0,+2% speed
+Footwear,Street Boots,Uncommon,18.0,+3% speed
+Footwear,LED Soles,Uncommon,12.0,+4% speed
+Footwear,Chrome Treads,Rare,5.0,+6% speed
+Footwear,Hover Kicks,Legendary,1.0,+10% speed
+Hand Gear,Bare Hands,Common,45.0,Neutral
+Hand Gear,Tape Wraps,Common,22.0,+3% melee
+Hand Gear,Tactical Gloves,Uncommon,15.0,+5% melee
+Hand Gear,Gold Rings,Uncommon,10.0,+7% melee
+Hand Gear,Tech Cuffs,Rare,6.0,+5% trap damage
+Hand Gear,HoloWrist Projector,Epic,1.5,+10% trap damage
+Hand Gear,Platinum Gauntlet,Legendary,0.5,+15% melee OR trap damage
+Aura / FX,None,Common,60.0,Neutral
+Aura / FX,Spray Mist,Common,20.0,-1% visibility
+Aura / FX,Neon Streak,Uncommon,12.0,+2% speed burst
+Aura / FX,Bass Pulse,Rare,5.0,+3% stun resistance
+Aura / FX,Drip Trail,Epic,2.0,+4% speed & +2% jump
+Aura / FX,Golden Crown Aura,Legendary,1.0,+7% all-stats minor boost

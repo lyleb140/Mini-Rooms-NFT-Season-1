@@ -1,0 +1,90 @@
+import os, json, csv, random, shutil
+from PIL import Image, ImageDraw, ImageFont
+
+# ------------------------------
+# SETTINGS
+# ------------------------------
+COUNT = 2500  # Full collection size
+OUTPUT_DIR = "solana_upload_ready_full"
+TEMPLATE_FILE = "templates/hoodie_metadata_template.json"
+TRAITS_FILE = "hoodie_traits.csv"
+
+# ------------------------------
+# PREP OUTPUT
+# ------------------------------
+if os.path.exists(OUTPUT_DIR):
+    shutil.rmtree(OUTPUT_DIR)
+
+os.makedirs(f"{OUTPUT_DIR}/images", exist_ok=True)
+os.makedirs(f"{OUTPUT_DIR}/metadata", exist_ok=True)
+
+# ------------------------------
+# LOAD TEMPLATE
+# ------------------------------
+with open(TEMPLATE_FILE) as f:
+    template = json.load(f)
+
+# ------------------------------
+# LOAD TRAITS
+# ------------------------------
+traits = {}
+with open(TRAITS_FILE, newline='') as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        cat = row["TraitCategory"]
+        opt = row["Option"]
+        chance = float(row["MintChancePercent"])
+        traits.setdefault(cat, []).append((opt, chance))
+
+# Normalize weights
+weights = {}
+for cat, opts in traits.items():
+    total = sum(o[1] for o in opts)
+    weights[cat] = ([o[0] for o in opts], [o[1] / total for o in opts])
+
+# ------------------------------
+# GENERATE COLLECTION
+# ------------------------------
+print(f"Generating {COUNT} images + metadata...")
+
+for i in range(1, COUNT + 1):
+    # ---------- IMAGE ----------
+    img = Image.new("RGBA", (1024, 1024), (30, 30, 30, 255))
+    draw = ImageDraw.Draw(img)
+
+    # Colored block
+    color = (
+        random.randint(40, 200),
+        random.randint(40, 200),
+        random.randint(40, 200)
+    )
+    draw.rectangle([40, 160, 984, 864], fill=color)
+
+    # Text overlay
+    txt = f"Hoodie #{i:04d}"
+    try:
+        font = ImageFont.truetype("arial.ttf", 64)
+    except:
+        font = ImageFont.load_default()
+
+    w, h = draw.textsize(txt, font=font)
+    draw.text(((1024 - w) // 2, 480), txt, fill=(255, 255, 255, 255), font=font)
+
+    # Save image
+    img.save(f"{OUTPUT_DIR}/images/hoodie_{i:04d}.png")
+
+    # ---------- METADATA ----------
+    attrs = []
+    for cat, (opts, probs) in weights.items():
+        choice = random.choices(opts, weights=probs, k=1)[0]
+        attrs.append({"trait_type": cat, "value": choice})
+
+    meta = dict(template)
+    meta["name"] = f"Hoodie Character #{i:04d}"
+    meta["image"] = f"https://yourcdn.com/images/hoodie_{i:04d}.png"
+    meta["attributes"] = attrs
+
+    with open(f"{OUTPUT_DIR}/metadata/{i}.json", "w") as f:
+        json.dump(meta, f, indent=4)
+
+print("DONE! Full collection generated successfully.")

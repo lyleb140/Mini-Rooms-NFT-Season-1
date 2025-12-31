@@ -1,0 +1,44 @@
+TraitCategory,Option,RarityLabel,MintChancePercent,BuffDescription
+Wall Texture,Concrete,Common,35.0,+1% room defense
+Wall Texture,Brick,Common,25.0,+2% room defense
+Wall Texture,Graffiti Walls,Uncommon,18.0,+3% room defense
+Wall Texture,Steel Shutters,Uncommon,12.0,+4% room defense
+Wall Texture,LED Walls,Rare,7.0,+6% room defense
+Wall Texture,Holo-Tag Walls,Epic,3.0,+10% room defense
+Floor Style,Hardwood,Common,35.0,+1% speed in room
+Floor Style,Tile,Common,25.0,+1% jump
+Floor Style,Spray-Painted Concrete,Uncommon,18.0,+2% speed
+Floor Style,Neon Grid,Uncommon,12.0,+3% speed
+Floor Style,Vinyl Floor,Rare,7.0,+5% speed
+Floor Style,Holo-Floor,Epic,3.0,+10% movement boost inside room
+Centerpiece,Canvas,Common,30.0,Healing +2% in room
+Centerpiece,DJ Deck,Common,25.0,+5% enemy footstep detection
+Centerpiece,Breaker Mat,Uncommon,20.0,+3% dodge in room
+Centerpiece,Tool Bench,Uncommon,15.0,+5% trap damage
+Centerpiece,Med Pod,Rare,7.0,+5% heal & revive speed
+Centerpiece,Neon Art Tower,Epic,2.5,+10% special buff
+Centerpiece,Platinum Crown Throne,Legendary,0.5,+10% all room stats
+Lighting,Tube Lights,Common,40.0,Neutral
+Lighting,Streetlamp Glow,Common,22.0,-2% enemy accuracy
+Lighting,Neon Strips,Uncommon,18.0,-3% enemy visibility
+Lighting,Disco Lights,Uncommon,12.0,-4% enemy targeting accuracy
+Lighting,UV Blacklight,Rare,6.0,-6% visibility to enemies
+Lighting,Gold Spotlight,Epic,2.0,-10% enemy visibility in your room
+FX Background,No FX,Common,40.0,Neutral
+FX Background,Light Dust,Common,25.0,+1% dodge
+FX Background,Neon Flicker,Uncommon,18.0,+2% dodge
+FX Background,Spray Animation,Uncommon,10.0,+3% dodge
+FX Background,Bass Pulse,Rare,5.0,+3% stun resistance
+FX Background,Crown Aura FX,Epic,2.0,+5% dodge & +5% accuracy
+Room Props,Crates,Common,35.0,+1% inventory
+Room Props,Spray Rack,Common,25.0,+2% inventory
+Room Props,Toolbox,Uncommon,18.0,+1 trap max
+Room Props,Vinyl Shelf,Uncommon,12.0,+2% heal item bonus
+Room Props,Mixer Console,Rare,7.0,+3% enemy detection
+Room Props,Drone Case,Epic,3.0,Auto-ping enemies every 10 sec
+Graffiti Tag,Basic Tag,Common,40.0,Neutral
+Graffiti Tag,Bubble Letter,Common,25.0,-1% enemy accuracy
+Graffiti Tag,Throw-Up,Uncommon,18.0,-2% enemy accuracy
+Graffiti Tag,Wildstyle,Uncommon,10.0,-3% enemy accuracy
+Graffiti Tag,Neon Outline,Rare,5.0,-4% enemy accuracy
+Graffiti Tag,Gold Crown Tag,Epic,2.0,-6% enemy accuracy & bonus room XP

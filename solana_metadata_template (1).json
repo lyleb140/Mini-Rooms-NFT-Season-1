@@ -1,0 +1,52 @@
+{
+    "name": "Hoodie Character #0001",
+    "symbol": "CMR",
+    "description": "Custom Mini Rooms Hoodie NFT \u2014 Urban Season One.",
+    "seller_fee_basis_points": 500,
+    "image": "https://yourcdn.com/images/hoodie_0001.png",
+    "attributes": [
+        {
+            "trait_type": "Hoodie Fabric",
+            "value": "Platinum Weave"
+        },
+        {
+            "trait_type": "Hood Type",
+            "value": "Chrome Hood"
+        },
+        {
+            "trait_type": "Face Accessory",
+            "value": "Crown Mask"
+        },
+        {
+            "trait_type": "Back Gear",
+            "value": "Street Tech Drone"
+        },
+        {
+            "trait_type": "Footwear",
+            "value": "Hover Kicks"
+        },
+        {
+            "trait_type": "Hand Gear",
+            "value": "Platinum Gauntlet"
+        },
+        {
+            "trait_type": "Aura / FX",
+            "value": "Golden Crown Aura"
+        }
+    ],
+    "properties": {
+        "files": [
+            {
+                "uri": "https://yourcdn.com/images/hoodie_0001.png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "YourWalletAddressHere",
+                "share": 100
+            }
+        ]
+    }
+}
